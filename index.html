@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -42,10 +43,39 @@
 
 
         <h3>6-week implantations</h3>
-        <img src="NeuNGFAPglas20may24b_thumb.jpg"  /> 
-        <img src="NeuNGFAPSW6VH11_thumb.jpg"  /> 
-        <img src="NeuNGFAPSW6VH13b_thumb.jpg" />
-        <p>
+
+        <div>
+            <!-- Tab headers -->
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Sagittal</a></li>
+              <li class=""><a href="#profile" data-toggle="tab">Coronal</a></li>
+              <li class=""><a href="#last" data-toggle="tab">Coronal, coated</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade active in" id="home">
+                <img src="NeuNGFAPglas20may24b_thumb.jpg"  /> 
+                <p>
+                  <span style="text-decoration:underline;">Top Left:</span> Sagittal implantation. Reactive astrogliosis, particularly in the 0-50 μm range, is massive and the hole left by the implant widened compared to the width of the implant itself.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <img src="NeuNGFAPSW6VH11_thumb.jpg"  /> 
+                <p>
+                  <span style="text-decoration:underline;">Top Right:</span> Coronal implantation. Astrogliosis is decreased and diffuse compared to sagittal implantations. Hole left by the implant is smaller with segment of the implant (orange) left in the section.
+                </p>
+              </div>
+              <div class="tab-pane fade" id="last">
+                <img src="NeuNGFAPSW6VH13b_thumb.jpg" />
+                <p>
+                  <span style="text-decoration:underline;">Bottom Left:</span> Coronal implantation, coated in gelatin. The effect of the embedding on astrogliosis was uncertain.
+                </p>
+              </div>
+            </div>
+          
+
+        <!-- <p>
           <span style="text-decoration:underline;">Top Left:</span> Sagittal implantation. Reactive astrogliosis, particularly in the 0-50 μm range, is massive and the hole left by the implant widened compared to the width of the implant itself.
         </p>
         <p>
@@ -54,15 +84,31 @@
         <p>
           <span style="text-decoration:underline;">Bottom Left:</span> Coronal implantation, coated in gelatin. The effect of the embedding on astrogliosis was uncertain.
         </p>
-
+ -->
         <h3>Statistical analysis of 6-week implantations</h3>
-        <p>
-          <img src="6-week-GFAP-50mu.png" /> 
-          <img src="6-week-GFAP-200mu.png" /> 
-          <img src="6-week-NeuN-50mu.png" /> 
-          <img src="Kvot-NeuN_Naiv-6w.png" />         
-          </p>
+        <!-- Tab headers -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#6wgfap50" data-toggle="tab">GFAP 50 µm</a></li>
+              <li><a href="#6wgfap200" data-toggle="tab">GFAP 200 µm</a></li>
+              <li><a href="#6wneun50" data-toggle="tab">NeuN 50 µm</a></li>
+              <li><a href="#quota" data-toggle="tab">Quota GFAP/NeuN</a></li>
+            </ul>
 
+            <!-- Tab content -->
+            <div class="tab-content">
+              <div class="tab-pane fade active in" id="6wgfap50">
+                <img src="6-week-GFAP-50mu.png"  width="45%"/> 
+              </div>
+              <div class="tab-pane fade" id="6wgfap200">
+                <img src="6-week-GFAP-200mu.png"  width="45%"/> 
+              </div>
+              <div class="tab-pane fade" id="6wneun50">
+                <img src="6-week-NeuN-50mu.png" width="45%" />
+              </div>
+              <div class="tab-pane fade" id="quota">
+                <img src="Kvot-NeuN_Naiv-6w.png" width="45%" />       
+              </div>
+            </div>
 
           <p>
           GFAP: In both 50 μm and 200 μm region of interests, GFAP intensity decreased significantly (p&lt;0.05) between sagittal and coronal groups. The effect of coating implants in lubricating gelatin prior to implantation showed a tendency towards improving astrocyte response, but variance was high, possibly due to contamination of the gelatin in the 24 hours between coating and surgery.
@@ -75,26 +121,43 @@
         <p>
           Astroglial (green) response to coronal implants after 12 weeks were similar in uncoated (left) and coated (right) groups. However, the tendency of some implants to produce a “halo” lacking both neurons and astrocytes observed in the 6 week groups remained in the 12 week groups, exemplified by the image on the right. Note the segment of SU-8 still left in the slice in this section.
         </p>
-        <p>  
-        <img src="NeuNGFAP12wH4suc6_thumb.jpg" />
-        <img src="NeuNGFAP12wH8gel2_thumb.jpg"/>
-        </p>
+        
+        <div>  
+          <img src="NeuNGFAP12wH4suc6_thumb.jpg" width="45%"/>
+          <img src="NeuNGFAP12wH8gel2_thumb.jpg" width="45%"/>
+        </div>
 
         <h3>Statistical analysis of 12-week implantations</h3>
-        <img src="12-week-NeuN-50mu.png" />
-        <img src="Kvot-NeuN_Naiv-12w.png" />
+        <div>
+          <img src="12-week-NeuN-50mu.png" width="45%" />
+          <img src="Kvot-NeuN_Naiv-12w.png" width="48%" />
+        </div>
 
         <p>
           Quantitative analysis of neuronal counts at 12 weeks. Coated implants had slightly higher neuronal counts, in absolute numbers, than did uncoated. When compared to naive area of cerebral cortex (right graph), the relative survival of neurons could be quantified.
         </p>
 
         <h3>RIP and NF200</h3>
-        <p>
-        <img src="0629.jpg" />
-        <img src="0636.jpg" style="float:right"/>
-        <img src="0668.jpg" />
 
-        </p>  
+         <!-- Tab headers -->
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#6weeks" data-toggle="tab">RIP 6 weeks</a></li>
+              <li><a href="#12weeks" data-toggle="tab">RIP 12 weeks</a></li>
+              <li><a href="#naive" data-toggle="tab">RIP naive</a></li>
+            </ul>
+
+            <!-- Tab content -->
+            <div class="tab-content">
+              <div class="tab-pane fade active in" id="6weeks">
+                <img src="0629.jpg" width="75%" />
+              </div>
+              <div class="tab-pane fade" id="12weeks">
+                <img src="0636.jpg" width="75%" />
+              </div>
+              <div class="tab-pane fade" id="naive">
+                <img src="0668.jpg" width="75%" />
+              </div>
+            </div>
 
         <p>
           RIP shows significant differences in density between the tissue subjected to surgery and naive tissue at 6 weeks (p&lt;0.005). No statistical significance can be seen for the 12-week groups, and indeed even the variance is relatively low.
@@ -137,6 +200,8 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
+    <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
 
